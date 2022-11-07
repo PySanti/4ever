@@ -1,17 +1,24 @@
+"use strict";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { addMouseAnimation } from './addMouseAnimation';
+import { updateParticles } from './updateParticles';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const particlesList = []
+export const particlesClassName = "particle"
+
+addMouseAnimation(particlesList)
+
+
 root.render(
   <React.StrictMode>
-    <App />
+
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+setInterval(() => {
+  updateParticles(particlesList)
+  
+}, 10)

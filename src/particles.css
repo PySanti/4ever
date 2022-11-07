@@ -1,0 +1,6 @@
+.particle{
+    position: absolute;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #0f0;
+}
