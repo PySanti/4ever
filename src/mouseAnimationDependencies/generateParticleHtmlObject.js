@@ -1,10 +1,11 @@
 import { nanoid } from "nanoid"
-import { particlesClassName } from "./index"
+import { particlesClassName } from "../index"
 
 export function generateParticleHtmlObject(){
     let newObject = document.createElement("div")
-    newObject.id = nanoid()
+    let id = nanoid()
+    newObject.id = id
     newObject.classList.add(particlesClassName)
-    document.getElementsByTagName("body")[0].appendChild(newObject)
-    return newObject.id
+    document.getElementById("root").appendChild(newObject)
+    return id
 }

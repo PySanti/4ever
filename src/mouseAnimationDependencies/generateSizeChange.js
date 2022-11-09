@@ -1,3 +1,3 @@
 export function generateSizeChange(){
-    return -1*Math.random()
+    return -0.5*Math.random()
 }

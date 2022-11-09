@@ -6,6 +6,7 @@ export class Particle{
         this.size = size
         this.size_change = size_change
         this.elementID = elementID
+        this.render()
 
     }
     update(){
@@ -15,11 +16,22 @@ export class Particle{
         this.move[1] += this.move_change[1]
         this.size += this.size_change
     } 
+
     render(){
-        let element = document.getElementById(this.objId)
-        let rect = element.getBoundingClientRect()
-        rect.x = this.pos[0]
-        rect.y = this.pos[1]
+        let element = document.getElementById(this.elementID)
+        if (element === null){
+            console.log(`${this.elementID} no existe`)
+        }
+        element.style.left  = `${this.pos[0]}px`
+        element.style.top   = `${this.pos[1]}px`
         element.style.padding = `${this.size}px`
+    }
+    show(){
+        console.log(`
+        ~~~~~~~~~~~~~~~~~~~~~~
+            id : ${this.elementID}
+            size : ${this.size}
+            move : ${this.move}
+        `)
     }
 }

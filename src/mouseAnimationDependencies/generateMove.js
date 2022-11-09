@@ -1,3 +1,3 @@
 export function generateRandomMove(){
-    return [Math.random(), Math.random()]
+    return [(Math.random() - 0.5)/10, (Math.random()  - 0.5)/10]
 }

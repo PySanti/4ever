@@ -1,24 +1,23 @@
 "use strict";
-import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
 import { addMouseAnimation } from './addMouseAnimation';
-import { updateParticles } from './updateParticles';
+import { updateParticles } from './mouseAnimationDependencies/updateParticles';
+import { renderParticles} from "./mouseAnimationDependencies/renderParticles"
+import "./particles.css"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-const particlesList = []
+let particlesList = []
 export const particlesClassName = "particle"
+export let counter = 0;
 
 addMouseAnimation(particlesList)
 
-
-root.render(
-  <React.StrictMode>
-
-  </React.StrictMode>
-);
-
 setInterval(() => {
+  console.log(particlesList.length)
   updateParticles(particlesList)
-  
+  let i = 0 
+  particlesList.forEach((particle) => {
+    console.log(`${i} -> ${particle.elementID}`)
+    i++;
+  })
+  renderParticles(particlesList)
 }, 10)

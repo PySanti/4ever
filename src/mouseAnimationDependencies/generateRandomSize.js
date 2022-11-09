@@ -1,3 +1,3 @@
 export function generateRandomSize(){
-    return Math.random()*50;
+    return Math.random()*20;
 }
