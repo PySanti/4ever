@@ -1,21 +1,14 @@
 import { generateRandomMove } from "./generateMove";
 import { generateParticleHtmlObject } from "./generateParticleHtmlObject";
-import {generateRandomSize} from "./generateRandomSize"
-import { generateSizeChange } from "./generateSizeChange";
 import {Particle} from "./Particle"
 
 export function createNewParticle(initial_pos){
-    let move = generateRandomMove()
-    let move_change = generateRandomMove()
-    let size = generateRandomSize()
-    let size_change = generateSizeChange()
+    let pos = [initial_pos[0] + Math.random()*20, initial_pos[1] + Math.random()*20]
+    let move = generateRandomMove(10)
     let objId = generateParticleHtmlObject()
     return new Particle({
-        initial_pos : initial_pos,
+        initial_pos : pos,
         move : move,
-        size : size,
-        move_change : move_change,
-        size_change : size_change,
         elementID : objId
     })
 }

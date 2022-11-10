@@ -12,12 +12,6 @@ export let counter = 0;
 addMouseAnimation(particlesList)
 
 setInterval(() => {
-  console.log(particlesList.length)
   updateParticles(particlesList)
-  let i = 0 
-  particlesList.forEach((particle) => {
-    console.log(`${i} -> ${particle.elementID}`)
-    i++;
-  })
   renderParticles(particlesList)
 }, 10)

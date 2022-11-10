@@ -2,7 +2,7 @@ import { createNewParticle } from "./mouseAnimationDependencies/createNewParticl
 
 export function addMouseAnimation(particlesList){
     document.getElementsByTagName("html")[0].addEventListener("click", (e) => {
-        for (let i = 0; i < 10; i++){
+        for (let i = 0; (i < (20 - particlesList.length)); i++){
             let pos = [e.x,e.y]
             let newParticle = createNewParticle(pos)
             particlesList.push(newParticle)
