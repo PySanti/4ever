@@ -3,20 +3,9 @@
     color : #f00;
     text-shadow: var(--particle-shadow);
     animation-name: initialSizeAnimation;
-    animation-duration: 1s;
+    animation-duration: 0.2s;
     animation-iteration-count: 1;
     user-select: none;
     z-index: 0;
-}
-
-@keyframes initialSizeAnimation {
-    0%{
-        font-size: 0px;
-    }
-    50%{
-        font-size: calc(auto/2);
-    }
-    100%{
-        font-size: auto;
-    }
+    font-size: 0.5vw;
 }

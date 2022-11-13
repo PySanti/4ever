@@ -1,13 +1,13 @@
-import { generatePos} from "./lateralMsgDependencies/generatePos"
-import { lateralMsgClassName } from "./index"
-import { createHtmlLateralMsg } from "./lateralMsgDependencies/createHtmlLateralMsg"
+import { generatePos} from "./generatePos"
+import { lateralMsgClassName } from "../index"
+import { createHtmlLateralMsg } from "./createHtmlLateralMsg"
 
 
 export function addLateralMsgTimeout(msg, root){
-    let msgPos      = generatePos()
+    let msgPos      = generatePos({lateralMsg : true})
     let element     = createHtmlLateralMsg(lateralMsgClassName, msg, msgPos)
     let leftElement = msgPos[0] < 0 ? true:false;
-    let msgTiming = 4000//msg.length*200 
+    let msgTiming = msg.length*200 
     console.log(`Posicion del mensaje ${msgPos}`)
     setTimeout(() => {
         if (leftElement) {

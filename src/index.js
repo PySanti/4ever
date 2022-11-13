@@ -1,14 +1,20 @@
 "use strict";
 import './index.css';
-import "./mouseAnimationDependencies/particles.css"
+import "./particlesAnimationDependencies/particles.css"
 import "./lateralMsgDependencies/lateralMsg.css"
-import { addMouseAnimation } from './addMouseAnimation';
 import { addLateralMsgGenerator } from './addLateralMsgGenerator';
+import { addImgGiftGenerator } from './addImgGiftGenerator';
+import { setParticlesInterval } from './particlesAnimationDependencies/setParticlesInterval';
 
 let particlesList = []
 export const particlesClassName = "particle"
 export const lateralMsgClassName = "lateral-msg"
+export const imgGiftClassName = "img-gift"
+export const imgClassName = "photo"
+export const imgAnimationClassName = "photo-opened"
 export let counter = 0;
 
-addMouseAnimation(particlesList)
+
+setParticlesInterval({particlesList : particlesList})
 addLateralMsgGenerator()
+addImgGiftGenerator({particleList : particlesList})

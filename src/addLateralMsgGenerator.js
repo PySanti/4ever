@@ -1,5 +1,5 @@
 import { lateralMsgClassName } from "."
-import { addLateralMsgTimeout } from "./addLateralMsgTimeout"
+import { addLateralMsgTimeout } from "./lateralMsgDependencies/addLateralMsgTimeout"
 import { generateRandomIndex } from "./lateralMsgDependencies/generateRandomIndex"
 
 export function addLateralMsgGenerator(root){
@@ -22,13 +22,13 @@ export function addLateralMsgGenerator(root){
         "Que lindo cuando empezamos a hablar, cuando me dijiste que te encantaban los chivos, que creamos la palabra chocha, que hablabamos de collares y pulseras, que debatiamos sobre estupideces",
     ]
     setInterval(() => {
-        let randomIndex = generateRandomIndex(mensajes.length)
         let lateralMsgs = document.getElementsByClassName(lateralMsgClassName)
-        let emojisList = ["🧡", "💛", "💚", "💙", "💜", "🤎", "🖤", "🤍"]
-        let emoji = emojisList[generateRandomIndex(emojisList.length)]
-        let mensaje = mensajes[randomIndex] + `<a class='msg-emoji'> ${emoji}</a>`
-        let root = document.getElementById('root')
         if (lateralMsgs.length === 0){
+            let randomIndex = generateRandomIndex(mensajes.length)
+            let emojisList = ["🧡", "💛", "💚", "💙", "💜", "🤎", "🖤", "🤍", "💗", "💖", "💘", "💝", "❤️‍🔥", "❤️‍🩹", "👫"]
+            let emoji = emojisList[generateRandomIndex(emojisList.length)]
+            let mensaje = mensajes[randomIndex] + `<a class='msg-emoji'> ${emoji}</a>`
+            let root = document.getElementById('root')
             addLateralMsgTimeout(mensaje, root)
         }
     },2000)
