@@ -4,9 +4,6 @@
     font-size: 1vw;
     position : absolute;
     width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: left  2s;
     max-width: 15vw;
     padding: 10px;

@@ -3,4 +3,4 @@
 - agregar emojis con span a los lateralmsg
 - agregar estilos de background a los lateralmsg
 - mejorar el grandiente del background
-
+- agregar titulo a la pagina
