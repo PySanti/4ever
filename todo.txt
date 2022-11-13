@@ -1,3 +1,6 @@
 - cambiar icono de la pestania
 - cambiar title con alguna tipografia
+- agregar emojis con span a los lateralmsg
+- agregar estilos de background a los lateralmsg
+- mejorar el grandiente del background
 

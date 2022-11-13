@@ -1,0 +1,22 @@
+.lateral-msg{
+    --margin-distance : 200px;
+    font-family: 'Amaranth', sans-serif;;
+    font-size: 1vw;
+    position : absolute;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left  2s;
+    max-width: 15vw;
+    padding: 10px;
+    border-radius: 20px;
+    background: inherit;
+}
+
+.msg-emoji{
+    text-shadow: 0px 0px 10px #ff0;
+}
+
+
+

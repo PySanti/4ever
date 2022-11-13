@@ -7,7 +7,8 @@ export function updateParticles(particlesList){
     for (let i = 0; i < particlesCop.length ; i++){
         particle = particlesCop[i]
         particle.update()
-        if (particleOutOfLimit(particle.pos)){
+        let particleRect = document.getElementById(particle.elementID).getBoundingClientRect()
+        if (particleOutOfLimit(particle.pos, particleRect)){
             removeParticle(particle, particlesList)
         }
     }
