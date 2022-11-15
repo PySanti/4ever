@@ -2,7 +2,7 @@ import {  imgClassName } from "../index";
 import { generateRandomIndex } from "../lateralMsgDependencies/generateRandomIndex";
 import { addRemovingImgFunction } from "./addRemovingImgFunction";
 
-const imgsMaxCount = 212
+const imgsMaxCount = 208
 
 export function setImgAttrs({img, pos}){
     let photo = generateRandomIndex(imgsMaxCount)
