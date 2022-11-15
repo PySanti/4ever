@@ -1,6 +1,6 @@
-import { lateralMsgClassName } from "."
-import { addLateralMsgTimeout } from "./lateralMsgDependencies/addLateralMsgTimeout"
-import { generateRandomIndex } from "./lateralMsgDependencies/generateRandomIndex"
+import { lateralMsgClassName } from "../index"
+import { addLateralMsgTimeout } from "../lateralMsgDependencies/addLateralMsgTimeout"
+import { generateRandomIndex } from "../lateralMsgDependencies/generateRandomIndex"
 
 export function addLateralMsgGenerator(root){
     let mensajes = [

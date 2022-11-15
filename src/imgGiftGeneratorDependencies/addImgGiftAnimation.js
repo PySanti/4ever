@@ -1,5 +1,6 @@
-import { imgAnimationClassName } from "..";
-import { addParticlesAnimation } from "../addParticlesAnimation";
+import { imgAnimationClassName } from "../index";
+import { addParticlesAnimation } from "../mainAddFunctions/addParticlesAnimation";
+
 import { addRemovingGiftAnimation } from "./addRemovingGiftAnimation";
 
 export function addImgGiftAnimation({particlesList, gift, container, img}){

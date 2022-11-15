@@ -1,5 +1,5 @@
-import { addImgGift } from "./imgGiftGeneratorDependencies/addImgGift"
-import { imgClassName, imgGiftClassName } from "./index"
+import { addImgGift } from "../imgGiftGeneratorDependencies/addImgGift"
+import { imgClassName, imgGiftClassName } from "../index"
 
 export function addImgGiftGenerator({particleList}){
     let imgGifts = document.getElementsByClassName(imgGiftClassName)

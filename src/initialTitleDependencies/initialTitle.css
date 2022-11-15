@@ -1,0 +1,14 @@
+
+.initial-title{
+    position: absolute;
+    left : 30vw;
+    top : -30vh;
+    font-family: 'Amaranth', sans-serif;;
+    font-size: 3vw;
+    padding: 20px;
+    transition: top .5s;
+}
+
+.initial-title-animation{
+    top : 2vh;
+}

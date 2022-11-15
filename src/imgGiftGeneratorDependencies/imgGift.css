@@ -30,6 +30,7 @@
 .photo-opened{
     transform: scale(1,1);
     cursor: pointer;
+    transition: transform 2s, background-color .5s, padding .5s, opacity .5s, border .5s;
 }
 .photo-opened:hover{
     background-color: #f04;
@@ -39,5 +40,6 @@
 }
 
 .photo-closed{
-    transform : scale(0,0)
+    transform : scale(0,0);
+    transition: transform .5s, background-color .5s, padding .5s, opacity .5s, border .5s;
 }
