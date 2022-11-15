@@ -6,7 +6,7 @@ export function addLateralMsgGenerator(root){
     let mensajes = [
         "Te amo mi princesa :)",
         "A pesar de que no soy perfecto y que se me hace dificil mejorar, lo unico que te puedo prometer es que hare todo lo posible por que estemos juntos toda la vida",
-        "Queria hacerte este regalo para poder las fotos mas memorables de nuestros primeros 4 meses. El numero 4 es importante por tu cumple y por el numero de la camisa de Rakitic",
+        "Queria hacerte este regalo para poder ver las fotos mas memorables de nuestros primeros 4 meses. El numero 4 es importante por tu cumple y por el numero de la camisa de Rakitic",
         "Amor no quiero que nunca dudes de lo que siento por ti, me equivoco, me equivoque y me equivocare, pero nunca dudare que eres el amor de mi vida",
         "Bebe y queria decirte que si te voy a regalar una rosa, y cuando lo haga lo recordaras para toda la vida (o al menos eso espero)",
         "Amor y aunque a pesar de que a veces nos sintamos mal, de que a veces tengamos inconformidades, recuerda que siempre estare mejor contigo que sin ti bebe, siempre estaremos juntos mientras quieras",
@@ -17,7 +17,7 @@ export function addLateralMsgGenerator(root){
         "Ojala emporio pueda ver esto algun dia",
         "Extraño esa fiesta en casa de julio en la que bailamos de todo, nos besamos, nos regañaron, nos dejaron botados en la calle, vimos juntos el amanecer ...",
         "Eres lo mas importante de mi vida",
-        "Uno de los momentos que me hicieron darme cuenta de lo importante que eras para mi, fue ese sabado en street market, cuando a pesar de que pasaron solamente 2 semanas que no nos veiamos, lo senti como 2 años mas tristes de mi vida",
+        "Uno de los momentos que me hicieron darme cuenta de lo importante que eras para mi, fue ese sabado en street market, cuando a pesar de que pasaron solamente 2 semanas que no nos veiamos, lo senti como 2 años mas tristes de mi vida, y cuando vi que llegabas y ponias esa cara de pena mezclada con felicidad senti la mayor alegria del mundo",
         "Podre ser empalagoso, podra costarme saber cuando necesitas que te apoye, podre no tener demasiada plata, podre ser exagerado, podre quedarme dormido en cualquier sitio, pero jamas podre dejar de amarte",
         "Que lindo cuando empezamos a hablar, cuando me dijiste que te encantaban los chivos, que creamos la palabra chocha, que hablabamos de collares y pulseras, que debatiamos sobre estupideces",
     ]

@@ -7,7 +7,6 @@ export function addImgGiftGenerator({particleList}){
     setInterval(() => {
         if ((imgGifts.length === 0) && (imgs.length === 0)){
             let root = document.getElementById('root')
-            console.log("agregando imagen")
             addImgGift({root : root, particlesList : particleList})
         }
     }, 4000)

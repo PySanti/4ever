@@ -12,6 +12,7 @@ export const lateralMsgClassName = "lateral-msg"
 export const imgGiftClassName = "img-gift"
 export const imgClassName = "photo"
 export const imgAnimationClassName = "photo-opened"
+export const quitImgClassName = "photo-closed"
 export let counter = 0;
 
 
