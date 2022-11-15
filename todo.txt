@@ -1,5 +1,1 @@
-- modificar estilos del title
-- cambiar icono de la pestania
-- cambiar title con alguna tipografia
-- ver todas las imagenes de nuevnpmo
 - refactor

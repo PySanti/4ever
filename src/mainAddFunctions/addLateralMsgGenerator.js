@@ -30,7 +30,6 @@ export function addLateralMsgGenerator(root){
         if (lateralMsgs.length === 0){
             let emojisList = ["🧡", "💛", "💚", "💙", "💜", "🤎", "🖤", "🤍", "💗", "💖", "💘", "💝", "❤️‍🔥", "❤️‍🩹", "👫"]
             let emoji = emojisList[generateRandomIndex(emojisList.length)]
-            console.log(currentLateralIndexMsg)
             let mensaje = mensajes[currentLateralIndexMsg] + `<a class='msg-emoji'> ${emoji}</a>`
             let root = document.getElementById('root')
             currentLateralIndexMsg += 1
