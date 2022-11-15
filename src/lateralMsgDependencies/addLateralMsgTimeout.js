@@ -7,7 +7,7 @@ export function addLateralMsgTimeout(msg, root){
     let msgPos      = generatePos({lateralMsg : true})
     let element     = createHtmlLateralMsg(lateralMsgClassName, msg, msgPos)
     let leftElement = msgPos[0] < 0 ? true:false;
-    let msgTiming = msg.length*200 
+    let msgTiming = msg.length*100 
     console.log(`Posicion del mensaje ${msgPos}`)
     setTimeout(() => {
         if (leftElement) {
