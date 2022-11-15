@@ -6,7 +6,7 @@
     font-family: 'Amaranth', sans-serif;;
     font-size: 3vw;
     padding: 20px;
-    transition: top .5s;
+    transition: top 1s;
 }
 
 .initial-title-animation{

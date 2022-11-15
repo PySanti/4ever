@@ -8,7 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   --particle-shadow : 1px 1px 10px #ff0;
-  --background-color : linear-gradient(to right, #f06,#a03);
+  --background-color : linear-gradient(to right, rgb(180, 17, 82),rgb(151, 16, 55));
   background: var(--background-color);
   user-select: none;
 }

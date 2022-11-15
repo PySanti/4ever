@@ -2,7 +2,7 @@ import { lateralMsgClassName } from "../index"
 import { addLateralMsgTimeout } from "../lateralMsgDependencies/addLateralMsgTimeout"
 import { generateRandomIndex } from "../lateralMsgDependencies/generateRandomIndex"
 
-let currentLateralIndexMsg = 17;
+let currentLateralIndexMsg = 0;
 
 export function addLateralMsgGenerator(root){
     let mensajes = [
