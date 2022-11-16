@@ -1,1 +1,5 @@
 - refactor
+- quitar todos los console log
+- exportar a movile y reparar responsive
+- agregar pantalla de carga para cuando no haya internet
+- eliminar todo y exportar version final
