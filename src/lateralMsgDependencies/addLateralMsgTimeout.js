@@ -1,23 +1,21 @@
 import { generatePos} from "./generatePos"
 import { lateralMsgClassName } from "../index"
 import { createHtmlLateralMsg } from "./createHtmlLateralMsg"
+import { setLateralMsgPos } from "./setLateralMsgPos"
 
 
 export function addLateralMsgTimeout(msg, root){
-    let msgPos      = generatePos({lateralMsg : true})
-    let element     = createHtmlLateralMsg(lateralMsgClassName, msg, msgPos)
+    let element     = createHtmlLateralMsg(lateralMsgClassName, msg)
+    let elementRect = element.getBoundingClientRect()
+    let msgPos      = generatePos({lateralMsg : true, lateralMsgSize : [elementRect.width, elementRect.height]})
+    setLateralMsgPos(element, msgPos)
     let leftElement = msgPos[0] < 0 ? true:false;
     let msgTiming = msg.length*100 
     setTimeout(() => {
-        element.style.top = `${msgPos[1]}px`
         if (leftElement) {
             element.style.left = `1vw`
         } else {
-            if (window.innerWidth <= 500){
-                element.style.left = `60vw`
-            } else {
-                element.style.left = `80vw`
-            }
+            element.style.left = `${window.innerWidth - elementRect.width}px`
         }
         setTimeout(() => {
             if (leftElement){

@@ -5,10 +5,9 @@
     position : absolute;
     width: 40vw;
     transition: left  2s;
-    max-width: 15vw;
     padding: 10px;
     border-radius: 20px;
-    background: inherit;
+
 }
 
 .msg-emoji{
@@ -18,7 +17,6 @@
 @media (max-width : 500px){
     .lateral-msg{
         font-size : 2vw;
-        max-width: 30vw;
     }
 }
 

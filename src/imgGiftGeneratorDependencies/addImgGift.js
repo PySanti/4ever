@@ -5,7 +5,7 @@ import { setGiftAttrs } from "./setGiftAttrs";
 import { setImgAttrs } from "./setImgAttrs";
 
 export function addImgGift({root, particlesList}){
-    let pos = generatePos({lateralMsg : false})
+    let pos = generatePos({})
     let element = document.createElement("div")
     let img = document.createElement("img")
     setGiftAttrs({element : element, pos : pos})
