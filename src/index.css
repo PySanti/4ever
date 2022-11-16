@@ -40,5 +40,6 @@ code {
 @media (max-width : 500px){
     body{
         --background-color : linear-gradient(to bottom, rgb(192, 56, 110),rgb(243, 70, 119));
+        margin: auto;
     }
 }
