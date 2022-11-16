@@ -2,6 +2,7 @@
 html{
     overflow: hidden;
     overscroll-behavior: hidden;
+   margin: 0 auto; 
 }
 #root{
     overflow: hidden;
