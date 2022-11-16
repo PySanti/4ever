@@ -1,12 +1,12 @@
 .lateral-msg{
-    --margin-distance : 200px;
+    --margin-distance : 10vw;
     font-family: 'Amaranth', sans-serif;;
     font-size: 1vw;
     position : absolute;
     width: 40vw;
     transition: left  2s;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 1vh;
+    border-radius: 2vh;
 
 }
 
@@ -14,9 +14,9 @@
     text-shadow:1px 1px 5px #000;
 }
 
-@media (max-width : 500px){
+@media (max-width : 800px){
     .lateral-msg{
-        font-size : 2vw;
+        font-size : 3vw;
     }
 }
 

@@ -2,7 +2,6 @@
 html{
     overflow: hidden;
     overscroll-behavior: hidden;
-   margin: 0 auto; 
 }
 #root{
     overflow: hidden;
@@ -11,7 +10,6 @@ html{
 
 body {
     padding: 0;
-    margin: 0px;
     width: 100vw;
     height: 100vh;
     --particle-shadow : 1px 1px 10px #ff0;
@@ -20,6 +18,7 @@ body {
     user-select: none;
     overflow: hidden;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -41,6 +40,5 @@ code {
 @media (max-width : 500px){
     body{
         --background-color : linear-gradient(to bottom, rgb(192, 56, 110),rgb(243, 70, 119));
-        margin: auto;
     }
 }
