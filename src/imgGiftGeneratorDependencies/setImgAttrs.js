@@ -6,7 +6,7 @@ const imgsMaxCount = 208
 
 export function setImgAttrs({img, pos}){
     let photo = generateRandomIndex(imgsMaxCount)
-    img.src = `http://localhost:3000//imgs/${photo}.jpg` 
+    img.src = `./build/imgs/${photo}.jpg` 
     img.classList.add(imgClassName)
     img.style.left =  `calc(${pos[0]}px - ${(window.innerWidth*30)/170}px)`
     img.style.top =  `calc(${pos[1]}px - ${(window.innerHeight*30)/220}px)`
