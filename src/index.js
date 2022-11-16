@@ -1,4 +1,3 @@
-"use strict";
 import './index.css';
 import "./particlesAnimationDependencies/particles.css"
 import "./lateralMsgDependencies/lateralMsg.css"
