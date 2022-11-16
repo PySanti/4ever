@@ -13,7 +13,11 @@ export function addLateralMsgTimeout(msg, root){
         if (leftElement) {
             element.style.left = `1vw`
         } else {
-            element.style.left = `80vw`
+            if (window.innerWidth <= 500){
+                element.style.left = `60vw`
+            } else {
+                element.style.left = `80vw`
+            }
         }
         setTimeout(() => {
             if (leftElement){

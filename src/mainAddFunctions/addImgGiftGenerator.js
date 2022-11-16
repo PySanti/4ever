@@ -9,5 +9,5 @@ export function addImgGiftGenerator({particleList}){
             let root = document.getElementById('root')
             addImgGift({root : root, particlesList : particleList})
         }
-    }, 4000)
+    }, 2000)
 }

@@ -38,6 +38,6 @@ export function addLateralMsgGenerator(root){
             } 
             addLateralMsgTimeout(mensaje, root)
         }
-    },2000)
+    },1000)
 
 }

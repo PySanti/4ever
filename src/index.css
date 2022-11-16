@@ -2,15 +2,21 @@
 html{
     overflow: hidden;
 }
+#root{
+    overflow: hidden;
+}
+
+
 body {
   padding: 0;
   margin: 0px;
   width: 100vw;
   height: 100vh;
   --particle-shadow : 1px 1px 10px #ff0;
-  --background-color : linear-gradient(to right, rgb(180, 17, 82),rgb(151, 16, 55));
+  --background-color : linear-gradient(to right, rgb(192, 56, 110),rgb(243, 70, 119));
   background: var(--background-color);
   user-select: none;
+  overflow: hidden;
 }
 
 code {
@@ -27,5 +33,11 @@ code {
     }
     100%{
         font-size: auto;
+    }
+}
+
+@media (max-width : 500px){
+    body{
+        --background-color : linear-gradient(to bottom, rgb(192, 56, 110),rgb(243, 70, 119));
     }
 }
