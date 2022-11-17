@@ -1,3 +1,4 @@
+import { generateRandomNumber } from "../globalFunctions/generateRandom";
 import { clickGiftEmoji, lateralMsgClassName } from "../index"
 import { addLateralMsgTimeout } from "../lateralMsgDependencies/addLateralMsgTimeout"
 
@@ -27,12 +28,14 @@ export function addLateralMsgGenerator(){
     setInterval(() => {
         let lateralMsgs = document.getElementsByClassName(lateralMsgClassName)
         if (lateralMsgs.length === 0){
-            let mensaje = mensajes[currentLateralIndexMsg]
+            let mensaje = undefined
+            if (currentLateralIndexMsg !== 0){
+                mensaje = mensajes[generateRandomNumber(1, mensajes.length-1)]
+            } else {
+                mensaje = mensajes[0]
+            }
             let root = document.getElementById('root')
             currentLateralIndexMsg += 1
-            if (currentLateralIndexMsg > (mensajes.length - 1)){
-                currentLateralIndexMsg = 0;
-            } 
             addLateralMsgTimeout(mensaje, root)
         }
     },1000)
