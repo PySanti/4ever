@@ -1,6 +1,5 @@
 import { clickGiftEmoji, lateralMsgClassName } from "../index"
 import { addLateralMsgTimeout } from "../lateralMsgDependencies/addLateralMsgTimeout"
-import { generateRandomIndex } from "../lateralMsgDependencies/generateRandomIndex"
 
 let currentLateralIndexMsg = 0;
 
