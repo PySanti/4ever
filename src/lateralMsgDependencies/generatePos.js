@@ -15,9 +15,10 @@ export function generatePos({lateralMsg = false, lateralMsgSize = null}){
         }
         pos[1] = generateRandomNumber(titleHeight + (window.innerHeight*0,3), window.innerHeight - lateralMsgSize[1])
     } else{
-        let generationRange = [40,60]
-        pos[0] = generateRandomNumber((window.innerWidth*generationRange[0]/100), (window.innerWidth*generationRange[1]/100))
-        pos[1] = generateRandomNumber((window.innerHeight*generationRange[0]/100), (window.innerHeight*generationRange[1]/100))
+        let generationRangeX = isAndroid() || isIos() ? [50, 80] : [40, 60]
+        let generationRangeY = [30, 70] 
+        pos[0] = generateRandomNumber((window.innerWidth*generationRangeX[0]/100), (window.innerWidth*generationRangeX[1]/100))
+        pos[1] = generateRandomNumber((window.innerHeight*generationRangeY[0]/100), (window.innerHeight*generationRangeY[1]/100))
     }
     return pos;
 }
