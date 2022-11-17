@@ -25,6 +25,6 @@ export function addLateralMsgTimeout(msg, root, titleHeight){
             setTimeout(() => {
                 root.removeChild(element)
             }, 2000)
-        }, msg.length*100)
+        }, 3000)//msg.length*100
     }, 1000)
 }
