@@ -1,7 +1,6 @@
-export function createHtmlLateralMsg(className, content){
+export function createHtmlLateralMsg(className){
     let element = document.createElement("div")
-    element.classList.add(className);
-    element.innerHTML = content 
     document.getElementById('root').appendChild(element)
+    element.classList.add(className);
     return element
 }

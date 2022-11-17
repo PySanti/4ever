@@ -1,16 +1,15 @@
 import { generatePos} from "./generatePos"
 import { lateralMsgClassName } from "../index"
 import { createHtmlLateralMsg } from "./createHtmlLateralMsg"
-import { setLateralMsgPos } from "./setLateralMsgPos"
+import { setLateralMsg} from "./setLateralMsg"
 
 
-export function addLateralMsgTimeout(msg, root){
-    let element     = createHtmlLateralMsg(lateralMsgClassName, msg)
+export function addLateralMsgTimeout(msg, root, titleHeight){
+    let element     = createHtmlLateralMsg(lateralMsgClassName)
     let elementRect = element.getBoundingClientRect()
     let msgPos      = generatePos({lateralMsg : true, lateralMsgSize : [elementRect.width, elementRect.height]})
-    setLateralMsgPos(element, msgPos)
-    let leftElement = msgPos[0] < 0 ? true:false;
-    let msgTiming = msg.length*100 
+    let leftElement = msgPos[0] < 0;
+    setLateralMsg(msg, element,msgPos)
     setTimeout(() => {
         if (leftElement) {
             element.style.left = `1vw`
@@ -19,13 +18,13 @@ export function addLateralMsgTimeout(msg, root){
         }
         setTimeout(() => {
             if (leftElement){
-                element.style.left = `-30vw`
+                element.style.left = `${-elementRect.width}px`
             } else {
-                element.style.left = `130vw`
+                element.style.left = `${window.innerWidth + elementRect.width}px`
             }
             setTimeout(() => {
                 root.removeChild(element)
-            }, 5000)
-        }, msgTiming)
+            }, 2000)
+        }, msg.length*100)
     }, 1000)
 }

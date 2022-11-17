@@ -1,7 +1,6 @@
 
 html{
     overflow: hidden;
-    overscroll-behavior: hidden;
 }
 #root{
     overflow: hidden;

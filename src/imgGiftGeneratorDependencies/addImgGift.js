@@ -4,7 +4,8 @@ import { addImgGiftAnimation } from "./addImgGiftAnimation";
 import { setGiftAttrs } from "./setGiftAttrs";
 import { setImgAttrs } from "./setImgAttrs";
 
-export function addImgGift({root, particlesList}){
+export function addImgGift({particlesList}){
+    let root = document.getElementById('root')
     let pos = generatePos({})
     let element = document.createElement("div")
     let img = document.createElement("img")

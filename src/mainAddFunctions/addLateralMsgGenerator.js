@@ -4,7 +4,7 @@ import { generateRandomIndex } from "../lateralMsgDependencies/generateRandomInd
 
 let currentLateralIndexMsg = 0;
 
-export function addLateralMsgGenerator(root){
+export function addLateralMsgGenerator(){
     let mensajes = [
         "Queria hacerte este regalo para que vieras una coleccion de las mejores fotos de nuestros primeros 4 meses bebe, son muchas y se generan aleatoriamente, asi cada vez que quieras ver la pagina veras una foto diferente de nosotros. Para ver las fotos nada mas haz click en los regalos y cuando quieras quitar la foto, haz click en la foto :)",
         "Te amo mi princesa :)",
