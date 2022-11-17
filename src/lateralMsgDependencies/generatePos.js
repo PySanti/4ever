@@ -1,12 +1,14 @@
 import { initialTitleClassName } from "..";
 import { generateRandomNumber } from "../globalFunctions/generateRandom";
+import { isAndroid } from "../globalFunctions/isAndroid";
+import { isIos } from "../globalFunctions/isIos";
 
 export function generatePos({lateralMsg = false, lateralMsgSize = null}){
     let pos = [0,0]
     if (lateralMsg){
         let random = generateRandomNumber(0,100)
         let titleHeight = document.getElementsByClassName(initialTitleClassName)[0].getBoundingClientRect().height
-        if (window.innerWidth <= 800){
+        if (isAndroid() || isIos()){
             pos[0] = -lateralMsgSize[0];
         } else {
             pos[0] = (random > 50)? window.innerWidth + lateralMsgSize[0] : -lateralMsgSize[0];

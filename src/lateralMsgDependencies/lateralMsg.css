@@ -1,9 +1,9 @@
 .lateral-msg{
     --margin-distance : 10vw;
     font-family: 'Amaranth', sans-serif;;
-    font-size: 1vw;
+    font-size: 30px;
     position : absolute;
-    width: 40vw;
+    width: 50vw;
     height: 40vw;
     transition: left  2s;
     padding: 1vh;
