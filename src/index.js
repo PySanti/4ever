@@ -17,6 +17,7 @@ export const imgAnimationClassName = "photo-opened"
 export const quitImgClassName = "photo-closed"
 export const initialTitleClassName = "initial-title"
 export const initialTitleAnimationClassName = 'initial-title-animation'
+export const clickGiftEmoji ="🧡" 
 export let counter = 0;
 
 

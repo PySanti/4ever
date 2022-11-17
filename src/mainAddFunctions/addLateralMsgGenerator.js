@@ -1,4 +1,4 @@
-import { lateralMsgClassName } from "../index"
+import { clickGiftEmoji, lateralMsgClassName } from "../index"
 import { addLateralMsgTimeout } from "../lateralMsgDependencies/addLateralMsgTimeout"
 import { generateRandomIndex } from "../lateralMsgDependencies/generateRandomIndex"
 
@@ -6,7 +6,7 @@ let currentLateralIndexMsg = 0;
 
 export function addLateralMsgGenerator(){
     let mensajes = [
-        "Queria hacerte este regalo para que vieras una coleccion de las mejores fotos de nuestros primeros 4 meses bebe, son muchas y se generan aleatoriamente, asi cada vez que quieras ver la pagina veras una foto diferente de nosotros. Para ver las fotos nada mas haz click en los regalos y cuando quieras quitar la foto, haz click en la foto :)",
+        `Queria hacerte este regalo para que vieras una coleccion de las mejores fotos de nuestros primeros 4 meses bebe, son muchas y se generan aleatoriamente, asi cada vez que quieras ver la pagina veras una foto diferente de nosotros. Para ver las fotos nada mas haz click en los ${clickGiftEmoji} y cuando quieras quitar la foto, haz click en la foto :)`,
         "Te amo mi princesa :)",
         "A pesar de que no soy perfecto y que se me hace dificil mejorar, lo unico que te puedo prometer es que hare todo lo posible por que estemos juntos toda la vida",
         "Amor no quiero que nunca dudes de lo que siento por ti, me equivoco, me equivoque y me equivocare, pero nunca dudare que eres el amor de mi vida",
@@ -28,9 +28,7 @@ export function addLateralMsgGenerator(){
     setInterval(() => {
         let lateralMsgs = document.getElementsByClassName(lateralMsgClassName)
         if (lateralMsgs.length === 0){
-            let emojisList = ["🧡", "💛", "💚", "💙", "💜", "🤎", "🖤", "🤍", "💗", "💖", "💘", "💝", "❤️‍🔥", "❤️‍🩹", "👫"]
-            let emoji = emojisList[generateRandomIndex(emojisList.length)]
-            let mensaje = mensajes[currentLateralIndexMsg] + `<a class='msg-emoji'> ${emoji}</a>`
+            let mensaje = mensajes[currentLateralIndexMsg]
             let root = document.getElementById('root')
             currentLateralIndexMsg += 1
             if (currentLateralIndexMsg > (mensajes.length - 1)){
