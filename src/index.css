@@ -16,6 +16,7 @@ body {
     background: var(--background-color);
     user-select: none;
     overflow: hidden;
+    font-size: 20px;
 }
 
 
@@ -36,8 +37,7 @@ code {
     }
 }
 
-@media (max-width : 500px){
-    body{
-        --background-color : linear-gradient(to bottom, rgb(192, 56, 110),rgb(243, 70, 119));
-    }
+@media (max-width : 1000px){
+
+
 }

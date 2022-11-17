@@ -1,3 +1,5 @@
 export function particleOutOfLimit(pos, particleRect){
-    return ((pos[0] > window.innerWidth || pos[1] > window.innerHeight || pos[0] < 0-particleRect.width || pos[1] < 0 - particleRect.height))
+    let bodyElement = document.getElementsByTagName("body")[0]
+    let bodyRect = bodyElement.getBoundingClientRect()
+    return ((pos[0] > bodyRect.width || pos[1] > bodyRect.innerHeight || pos[0] < -particleRect.width || pos[1] < 0 - particleRect.height))
 }

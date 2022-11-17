@@ -11,7 +11,7 @@ export function generatePos({lateralMsg = false, lateralMsgSize = null}){
         } else {
             pos[0] = (random > 50)? window.innerWidth + lateralMsgSize[0] : -lateralMsgSize[0];
         }
-        pos[1] = generateRandomNumber(titleHeight + (window.innerHeight*0,2), window.innerHeight - lateralMsgSize[1])
+        pos[1] = generateRandomNumber(titleHeight + (window.innerHeight*0,3), window.innerHeight - lateralMsgSize[1])
     } else{
         let generationRange = [20,80]
         pos[0] = generateRandomNumber((window.innerWidth*generationRange[0]/100), (window.innerWidth*generationRange[1]/100))

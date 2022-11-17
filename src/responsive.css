@@ -1,0 +1,13 @@
+@media (max-width : 900px){
+    .lateral-msg{
+        font-size: 3vw;
+    }
+    .initial-title{
+        font-size: 5vw;
+    }
+    body{
+        --background-color : linear-gradient(to bottom, rgb(192, 56, 110),rgb(243, 70, 119));
+    }
+}
+
+

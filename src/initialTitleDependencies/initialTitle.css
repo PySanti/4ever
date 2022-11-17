@@ -14,12 +14,3 @@
     top : 2vh;
 }
 
-
-@media (max-width : 500px){
-    .initial-title{
-        font-size : 8vw;
-    }
-}
-
-
-

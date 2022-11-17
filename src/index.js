@@ -2,6 +2,7 @@ import './index.css';
 import "./particlesAnimationDependencies/particles.css"
 import "./lateralMsgDependencies/lateralMsg.css"
 import "./initialTitleDependencies/initialTitle.css"
+import "./responsive.css"
 import { addLateralMsgGenerator } from './mainAddFunctions/addLateralMsgGenerator';
 import { addImgGiftGenerator } from './mainAddFunctions/addImgGiftGenerator';
 import { setParticlesInterval } from './particlesAnimationDependencies/setParticlesInterval';
